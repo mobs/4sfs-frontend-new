@@ -17,18 +17,18 @@ module.exports = {
         caslon: ['BigCaslon', 'serif']
       },
       colors: {
-        primary: '#093819',
-        secondary: '#35DEA4',
-        tertiary: '#ADB4AF',
-        quaternary: '#F6f6d0',
-        accent: '#ED8936',
-        lightgray: '#EDF2F7',
-        darkgray: '#2D3748',
-        bgGray: '#F9FAFB',
-        success: '#48BB78',
-        warning: '#ECC94B',
-        error: '#F56565',
-        muted: '#718096',
+        primary: '#C9A961',      // Luxury Gold
+        secondary: '#0F1419',    // Deep Charcoal
+        tertiary: '#E8DCC4',     // Champagne
+        quaternary: '#F5F1E8',   // Warm Ivory
+        accent: '#8B6F47',       // Bronze
+        lightgray: '#F8F6F3',
+        darkgray: '#1a1a1a',
+        bgGray: '#FAFAF8',
+        success: '#2D5F3F',
+        warning: '#D4A574',
+        error: '#8B4049',
+        muted: '#6B6B6B',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

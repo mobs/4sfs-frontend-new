@@ -35,7 +35,7 @@ const Select = ({
                 className={`w-full flex items-center justify-between px-4 py-3 ${icon ? 'pl-12' : 'pl-4'} rounded-xl bg-white/80 backdrop-blur-sm border border-gray-100 text-left focus:outline-none focus:border-secondary transition-all duration-300 ${className}`}
                 {...props}
             >
-                <span className={selectedOption ? 'text-gray-900' : 'text-gray-400'}>
+                <span className={selectedOption ? 'text-gray-900' : 'text-gray-900'}>
                     {selectedOption ? selectedOption.label : placeholder}
                 </span>
                 <FiChevronDown 
