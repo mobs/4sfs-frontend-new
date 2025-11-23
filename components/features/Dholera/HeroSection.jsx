@@ -28,9 +28,9 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
-      {/* Full-screen Video Background */}
-      <div className="absolute inset-0">
+    <section className="relative lg:h-screen overflow-hidden">
+      {/* Full-screen Video Background - Desktop only */}
+      <div className="absolute inset-0 hidden lg:block">
         {/* YouTube Video Embed */}
         <iframe
           className="absolute inset-0 w-full h-full pointer-events-none"
@@ -45,9 +45,21 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/85 via-secondary/60 to-secondary/40" />
       </div>
 
+      {/* Mobile Video Section */}
+      <div className="relative mt-12 lg:hidden w-full aspect-video">
+        <iframe
+          className="absolute inset-0 w-full h-full"
+          src="https://www.youtube.com/embed/spf8TKGeAXg?autoplay=1&mute=1&loop=1&playlist=spf8TKGeAXg&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+          title="Dholera Smart City"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-secondary/70 to-secondary/50" />
+      </div>
+
       {/* Content Container */}
-      <div className="relative h-full flex items-center justify-end">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
+      <div className="relative lg:h-full flex items-center justify-center lg:justify-end py-8 lg:py-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-center lg:justify-end">
           {/* Right Side - Floating Transparent Form */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -75,10 +87,10 @@ const HeroSection = () => {
                       </span>
                       <span className="text-xs font-bold text-white tracking-widest uppercase drop-shadow">Exclusive Opportunity</span>
                     </motion.div> */}
-                    <h1 className="text-3xl font-bold text-white mb-3 drop-shadow-lg">
+                    <h1 className="text-3xl font-bold md:text-white text-secondary mb-3 drop-shadow-lg">
                       Invest in Dholera <br/> Smart City
                     </h1>
-                    <p className="text-white/90 text-base drop-shadow font-medium">
+                    <p className="md:text-white/90 text-secondary text-base drop-shadow font-medium">
                       Get Your Free Expert Consultation
                     </p>
                   </div>
@@ -176,7 +188,7 @@ const HeroSection = () => {
               </div>
             </motion.div>
           </div>
-        </div>
+      </div>
   
       {/* Bottom Scroll Indicator with luxury touch */}
       <motion.div
